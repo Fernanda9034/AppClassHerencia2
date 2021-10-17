@@ -27,14 +27,14 @@ namespace AppClassHerencia2
             matricula = 0;
             carrera = "";
         }
-        public Alumno(string nombre, double fechaNacimiento, double matricula, string carrera) : base(nombre, fechaNacimiento)
+        public Alumno(string nombre, string fechaNacimiento, double matricula, string carrera) : base(nombre, fechaNacimiento)
         {
             this.matricula = matricula;
             this.carrera = carrera;
         }
         public override string ToString()
         {
-            return base.ToString() + "Matricula:" + matricula + "Carrera:" + carrera;
+            return base.ToString() + "  Matricula:" + matricula + "  Carrera:" + carrera;
 
         }
     }

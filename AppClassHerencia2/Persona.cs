@@ -15,9 +15,9 @@ namespace AppClassHerencia2
             get { return nombre; }
             set { nombre = value; }
         }
-        protected double fechaNacimiento;
+        protected string fechaNacimiento;
 
-        protected double FechaNacimiento
+        protected string FechaNacimiento
         {
             get { return fechaNacimiento; }
             set { fechaNacimiento = value; }
@@ -25,16 +25,16 @@ namespace AppClassHerencia2
         public Persona()
         {
             nombre = "";
-            fechaNacimiento = 0;
+            fechaNacimiento = "";
         }
-        public Persona(string nombre, double fechaNacimiento)
+        public Persona(string nombre, string fechaNacimiento)
         {
             this.nombre = nombre;
             this.fechaNacimiento = fechaNacimiento;
         }
         public override string ToString()
         {
-            return "  Nombre " + nombre + " Fecha de Nacimiento " + fechaNacimiento;
+            return "   Nombre:" +  nombre  + "  Fecha de Nacimiento:" +  fechaNacimiento ;
         }
     }
 }
